@@ -1,0 +1,1215 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.divider1 {
+  width: 100%;
+  height: 1%;
+  margin: 30px 0;
+}
+
+.divider2 {
+  width: 100%;
+  height: 50px;
+  margin: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider2 .divider-inside {
+  width: 50px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divider2 .divider-inside .divider-box {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(110, 112, 112);
+}
+.divider2 .divider-inside .divider-box:hover {
+  cursor: pointer;
+  background-color: rgb(162, 163, 163);
+}
+
+.background {
+  width: 100%;
+  background-color: #1F2025;
+  z-index: -2;
+  gap: 50px;
+}
+.background .splash-1 {
+  width: 70%;
+  height: 1000px;
+  margin-left: auto;
+  background-image: url("../images/splash 01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.background .navbar {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 3%;
+  gap: 10px;
+}
+.background .navbar .navbar-title {
+  width: 10%;
+  height: 100%;
+  margin-left: 5%;
+  display: flex;
+}
+.background .navbar .navbar-title .storm-logo {
+  width: 20%;
+  height: 100%;
+  background-image: url("../images/cloud-storm.svg");
+  background-position: center;
+  background-size: cover;
+}
+.background .navbar .navbar-title .quickit-logo {
+  width: 80%;
+  height: 100%;
+  background-image: url("../images/Quickit.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.background .navbar .navbar-dots {
+  width: 3%;
+  height: 100%;
+  margin: 0 -30px;
+}
+.background .navbar .navbar-pages {
+  width: 40%;
+  height: 100%;
+}
+.background .navbar .navbar-pages ul {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.background .navbar .navbar-pages ul li {
+  display: inline;
+  color: white;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.background .navbar .navbar-pages ul li:hover {
+  cursor: pointer;
+  color: #205BF1;
+}
+.background .navbar .navbar-globe {
+  width: 3%;
+  height: 100%;
+  background-image: url("../images/globe.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background .navbar .navbar-globe:hover {
+  cursor: pointer;
+}
+.background .navbar .navbar-vertical-line {
+  width: 2px;
+  height: 30px;
+  background-color: grey;
+  margin: 0 -60px;
+}
+.background .navbar .navbar-login {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.background .navbar .navbar-login:hover {
+  cursor: pointer;
+}
+.background .navbar .navbar-demo {
+  width: 10%;
+  height: 100%;
+  margin-right: 50px;
+  background-color: #205BF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.background .navbar .navbar-demo:hover {
+  cursor: pointer;
+}
+.background .info-title {
+  width: 45%;
+  font-family: Urbanist;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.background .info-desc {
+  width: 45%;
+  margin-top: 3%;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+.background .info-demo-btn {
+  width: 12%;
+  height: 8%;
+  margin-right: 50px;
+  background-color: #205BF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+}
+.background .info-demo-btn:hover {
+  cursor: pointer;
+}
+.background .info-video-btn {
+  width: 12%;
+  height: 8%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 85%;
+  left: 25%;
+}
+.background .info-video-btn:hover {
+  cursor: pointer;
+}
+.background .info-video-btn .info-video-play-icon {
+  width: 20%;
+  height: 50%;
+  margin-right: 10px;
+  background-image: url("../images/player-play.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background .info-video-btn .info-video-text {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.background .info-image-1 {
+  width: 10%;
+  height: 10%;
+  background-image: url("../images/info image 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 25%;
+  left: 60%;
+}
+.background .info-image-2 {
+  width: 20%;
+  height: 30%;
+  background-image: url("../images/info image 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+.background .info-image-3 {
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/info image 3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+}
+.background .info-image-4 {
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/info image 4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 75%;
+  right: 0%;
+}
+.background .trusted-companies {
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  position: absolute;
+  top: 120%;
+  left: 12%;
+}
+.background .company-infos {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.background .company-infos .company {
+  width: 30%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background .company-infos .company:hover {
+  cursor: pointer;
+}
+.background .company-infos .company img {
+  object-fit: cover;
+}
+.background .company-infos .company .company-title {
+  color: white;
+  margin-left: 15px;
+  font-family: Urbanist;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.background .dashboard-img {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background .dashboard-img div img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.background .splash-2 {
+  width: 390px;
+  height: 600px;
+  margin-top: -400px;
+  margin-right: auto;
+  background-image: url("../images/splash 02.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.background .together .together-pre {
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-left: 10%;
+}
+.background .together .together-title {
+  width: 38%;
+  font-family: Urbanist;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+.background .together .together-desc {
+  width: 40%;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 10%;
+}
+.background .together .together-img {
+  width: 300px;
+  height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  position: relative;
+  top: -270px;
+  right: -60%;
+}
+.background .together .together-img .stairs1 {
+  position: absolute;
+  right: 1%;
+}
+.background .together .together-img .star1 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.background .together .together-img .star2 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+.background .together .together-img .binocle {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.background .together .together-img .star3 {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+.background .together .together-img .star4 {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+}
+.background .together .together-img .sun {
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+}
+.background .together .together-img .stairs2 {
+  position: absolute;
+  bottom: 1%;
+}
+.background .analytics {
+  width: 80%;
+  height: 600px;
+  margin-left: 10%;
+  display: flex;
+}
+.background .analytics .analytics-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.background .analytics .analytics-text .analytics-text-div {
+  width: 360px;
+  height: 300px;
+}
+.background .analytics .analytics-text .analytics-text-div .analytics-pre {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.background .analytics .analytics-text .analytics-text-div .analytics-pre .analytics-icon {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background .analytics .analytics-text .analytics-text-div .analytics-pre .analytics-icon img {
+  width: 20px;
+  height: 20px;
+}
+.background .analytics .analytics-text .analytics-text-div .analytics-pre .analytics-pre-text {
+  margin-left: 10px;
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.background .analytics .analytics-text .analytics-text-div .analytics-title {
+  font-family: Urbanist;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+.background .analytics .analytics-text .analytics-text-div .analytics-desc {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.background .analytics .analytics-img {
+  width: 60%;
+  background-image: url("../images/analytics-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.background .benefits-title {
+  width: 80%;
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  position: relative;
+  left: 10%;
+}
+.background .business {
+  width: 40%;
+  font-family: Urbanist;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: relative;
+  left: 10%;
+}
+.background .business span {
+  color: #205BF1;
+}
+.background .benefits {
+  width: 90%;
+  height: 500px;
+  display: flex;
+}
+.background .benefits .benefits-img-div {
+  width: 50%;
+}
+.background .benefits .benefits-img-div .benefits-img {
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-image: url(../images/lamp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background .benefits .benefits-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.background .benefits .benefits-text .benefits-text-div {
+  width: 70%;
+  padding-left: 20px;
+  color: white;
+  opacity: 0.7;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.background .benefits .benefits-text .benefits-text-div:hover {
+  border-left: 5px solid #205BF1;
+}
+.background .benefits .benefits-text .benefits-text-div p {
+  color: white;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+}
+.background .teams {
+  width: 80%;
+  height: 600px;
+  background-color: rgba(87, 87, 87, 0.4);
+  margin-left: 10%;
+  position: relative;
+}
+.background .teams .splash-3 {
+  width: 270px;
+  height: 400px;
+  margin-left: auto;
+  background-image: url("../images/splash 03.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.background .teams .teams-title {
+  width: 40%;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background .teams .teams-desc {
+  width: 40%;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background .teams .teams-btn {
+  width: 20%;
+  height: 60px;
+  margin-right: 50px;
+  background-color: #205BF1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background .teams .teams-btn:hover {
+  cursor: pointer;
+}
+.background .teams .teams-btn .teams-btn-icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #688dea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background .statistics-title {
+  width: 50%;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Urbanist;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background .statistics-desc {
+  width: 40%;
+  margin: 50px 0 100px;
+  opacity: 0.5;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background .statistics-img {
+  width: 80%;
+  height: 400px;
+  background-image: url("../images/statistics.PNG");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  left: 10%;
+}
+
+.resources {
+  width: 80%;
+  height: 100px;
+  margin-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resources .resources-title {
+  font-family: Urbanist;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.resources .resources-view {
+  color: #205BF1;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.article {
+  width: 80%;
+  height: 450px;
+  margin: 70px 0 150px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.article .article-box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article .article-box .article-img {
+  width: 100%;
+  height: 250px;
+  object-position: center;
+  object-fit: cover;
+  background-color: bisque;
+}
+.article .article-box .article-pre-title {
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.article .article-box .article-title {
+  font-family: Urbanist;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.article .article-box .article-more {
+  width: 150px;
+  color: #205BF1;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.article .article-box .article-more:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(250, 250, 250);
+  position: relative;
+}
+footer .splash-4 {
+  width: 160px;
+  height: 232px;
+  margin-left: auto;
+  background-image: url("../images/splash 04.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+footer .footer-pages {
+  width: 80%;
+  height: 300px;
+  margin-top: -150px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .footer-pages .footer-pages-half {
+  width: 50%;
+  height: 300px;
+  display: flex;
+}
+footer .footer-pages .footer-pages-half .footer-pages-quarter {
+  width: 50%;
+  height: 300px;
+}
+footer .footer-pages .footer-pages-half .footer-pages-quarter ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .footer-pages .footer-pages-half .footer-pages-quarter ul li {
+  width: 200px;
+  margin-bottom: 10px;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer .footer-pages .footer-pages-half .footer-pages-quarter ul li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+footer .footer-pages .footer-pages-half .footer-pages-quarter ul .list-title {
+  margin-bottom: 30px;
+  color: #1F2025;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+footer .footer-pages .footer-pages-half .footer-pages-quarter ul .list-title:hover {
+  cursor: default;
+  opacity: 1;
+}
+footer .footer-rights {
+  width: 230px;
+  color: #1F2025;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+footer .footer-content {
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 87%;
+  left: 10%;
+}
+footer .footer-content .footer-content-half {
+  width: 50%;
+  color: #1F2025;
+  opacity: 0.5;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+footer .footer-content .footer-content-half:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+footer .footer-links {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 87%;
+  right: 5%;
+}
+footer .footer-links img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 781px) {
+  .background .splash-1 {
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/splash 01-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .background .navbar {
+    padding-top: 25px;
+  }
+  .background .navbar .navbar-dots {
+    margin: 0;
+    background-image: url("../images/grid-dots.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .background .navbar .navbar-pages-pricing,
+  .background .navbar .navbar-pages-contacts,
+  .background .navbar .navbar-globe,
+  .background .navbar .navbar-vertical-line,
+  .background .navbar .navbar-login {
+    display: none;
+    content-visibility: hidden;
+  }
+  .background .navbar .navbar-demo {
+    width: 150px;
+    height: 120%;
+  }
+  .background .info-title,
+  .background .info-desc {
+    width: 90%;
+    text-align: center;
+  }
+  .background .info-desc {
+    top: 65%;
+  }
+  .background .info-demo-btn {
+    width: 30%;
+    left: 15%;
+  }
+  .background .info-video-btn {
+    width: 30%;
+    left: 55%;
+  }
+  .background .info-image-1 {
+    width: 30%;
+    height: 10%;
+    top: 97%;
+    left: 40%;
+  }
+  .background .info-image-2 {
+    width: 50%;
+    top: 123%;
+    left: 28%;
+  }
+  .background .info-image-3 {
+    width: 25%;
+    top: 100%;
+    left: 1%;
+  }
+  .background .info-image-4 {
+    width: 20%;
+    height: 25%;
+    top: 100%;
+    right: 1%;
+  }
+  .background .trusted-companies {
+    top: 160%;
+  }
+  .background .company-infos {
+    margin-top: 40%;
+  }
+  .background .dashboard-img {
+    width: 90%;
+  }
+  .background .together {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .background .together .together-title,
+  .background .together .together-desc {
+    width: 90%;
+    text-align: center;
+  }
+  .background .together .together-img {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .background .analytics .analytics-img {
+    margin-top: 160px;
+  }
+  .background .business {
+    width: 90%;
+    margin-left: 0;
+  }
+  .background .benefits {
+    justify-content: space-between;
+  }
+  .background .benefits .benefits-img-div {
+    width: 30%;
+    margin-left: -100px;
+  }
+  .background .benefits .benefits-img-div .benefits-img {
+    width: 400px;
+    margin-left: -50px;
+  }
+  .background .benefits .benefits-text {
+    margin-left: 50px;
+    margin-top: 90px;
+  }
+  .background .benefits .benefits-text .benefits-text-div {
+    width: 100%;
+    margin-left: 50px;
+  }
+  .background .teams {
+    margin-top: 100px;
+  }
+  .background .teams .teams-title {
+    width: 90%;
+  }
+  .background .teams .teams-desc {
+    width: 90%;
+  }
+  .background .teams .teams-btn {
+    width: 40%;
+  }
+  .background .statistics-title,
+  .background .statistics-desc {
+    width: 90%;
+  }
+  .background .statistics-img {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .article .article-box-pisces {
+    display: none;
+  }
+  .article .article-box {
+    width: 45%;
+  }
+  footer .footer-pages {
+    width: 90%;
+    left: 0;
+    transform: translateX(0);
+  }
+  footer .footer-pages .footer-pages-half .footer-pages-quarter ul .templates {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 770px) {
+  .background .company-infos {
+    margin-top: 700px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .background .navbar .navbar-title {
+    width: 50px;
+    height: 150%;
+  }
+  .background .navbar .navbar-dots {
+    width: 30px;
+  }
+  .background .navbar .navbar-pages {
+    display: none;
+    content-visibility: hidden;
+  }
+  .background .info-title {
+    font-size: 50px;
+  }
+  .background .info-desc {
+    font-size: 15px;
+  }
+  .background .info-demo-btn {
+    width: 40%;
+    left: 30%;
+  }
+  .background .info-video-btn {
+    width: 40%;
+    top: 95%;
+    left: 30%;
+  }
+  .background .info-video-btn .info-video-play-icon {
+    display: none;
+  }
+  .background .info-image-1 {
+    width: 40%;
+    top: 105%;
+    left: 0;
+  }
+  .background .info-image-2 {
+    width: 75%;
+    top: 127%;
+    left: 20%;
+  }
+  .background .info-image-3 {
+    display: none;
+  }
+  .background .info-image-4 {
+    right: 0;
+  }
+  .background .company-infos {
+    height: 300px;
+    margin-top: 130%;
+  }
+  .background .company-infos .company {
+    width: 40%;
+    height: 80px;
+  }
+  .background .company-infos .company img {
+    width: 20px;
+    height: 20px;
+  }
+  .background .company-infos .company .company-title {
+    font-size: 15px;
+  }
+  .background .splash-2 {
+    width: 350px;
+  }
+  .background .together .together-title {
+    font-size: 25px;
+  }
+  .background .together .together-desc {
+    font-size: 15px;
+  }
+  .background .analytics {
+    margin-top: 170px;
+    flex-direction: column;
+  }
+  .background .analytics .analytics-text .analytics-text-div .analytics-title {
+    width: 300px;
+    font-size: 25px;
+  }
+  .background .analytics .analytics-text .analytics-text-div .analytics-desc {
+    font-size: 15px;
+  }
+  .background .analytics .analytics-img {
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    margin-top: -50px;
+  }
+  .background .business {
+    font-size: 30px;
+  }
+  .background .benefits {
+    width: 300px;
+    margin-top: 550px;
+    flex-direction: column-reverse;
+  }
+  .background .benefits .benefits-img-div {
+    width: 90%;
+    margin-left: -20px;
+  }
+  .background .benefits .benefits-img-div .benefits-img {
+    width: 360px;
+    background-position: center;
+  }
+  .background .benefits .benefits-text {
+    width: 80%;
+    margin-left: 20px;
+  }
+  .background .benefits .benefits-text .benefits-text-div {
+    width: 90%;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  .background .teams {
+    height: 500px;
+  }
+  .background .teams .teams-title {
+    font-size: 25px;
+  }
+  .background .teams .teams-desc {
+    font-size: 15px;
+    top: 43%;
+  }
+  .background .teams .teams-btn {
+    width: 70%;
+  }
+  .background .statistics-title {
+    font-size: 25px;
+  }
+  .background .statistics-desc {
+    width: 80%;
+    font-size: 15px;
+  }
+  .background .statistics-img {
+    margin-top: -100px;
+  }
+  .resources {
+    flex-direction: column;
+    align-items: start;
+  }
+  .resources .resources-title {
+    font-size: 25px;
+  }
+  .article {
+    flex-direction: column;
+    height: 700px;
+  }
+  .article .article-box-pisces {
+    display: none;
+  }
+  .article .article-box {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  footer {
+    height: 800px;
+  }
+  footer .footer-pages {
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  footer .footer-pages .footer-pages-half {
+    width: 90%;
+  }
+  footer .footer-pages .footer-pages-half .footer-pages-quarter ul li {
+    width: 100px;
+  }
+  footer .footer-rights {
+    width: 300px;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  footer .footer-content {
+    width: 220px;
+    font-size: 10px;
+    text-align: center;
+    top: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  footer .footer-links {
+    width: 150px;
+    text-align: center;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 380px) {
+  .background .company-infos {
+    margin-top: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
